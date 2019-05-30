@@ -1,0 +1,15 @@
+{
+  "Entities": [
+    {
+      "Position": {
+        "x": 150,
+        "y": 75
+      },
+      "Sprite": {
+        "texture": "Debug/Assets/test.png"
+      }
+    },
+
+    {}
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "Entities": [
+    {
+      
+      "Position": {
+        "x": 400,
+        "y": 75
+      },
+      "Sprite": {
+        "texture": "Debug/Assets/test.png",
+        "OriginCenter": true
+      },
+      "Rigidbody": {
+
+      },
+      "CircleCollider": {
+        "radius": 50
+      }
+    },
+
+    {
+      "Position": {
+        "x": 0,
+        "y": 0
+      },
+      "Sprite": {
+        "texture": "Debug/Assets/testfloor.png",
+        "OriginCenter": false
+      },
+      "RectangleCollider": {
+        "width": 800,
+        "height": 50
+      }
+    },
+      {
+      "Position": {
+        "x": 0,
+        "y": 800
+      },
+      "Sprite": {
+        "texture": "Debug/Assets/testfloor.png",
+          "OriginCenter": false
+      },
+      "RectangleCollider": {
+        "width": 800,
+        "height": 50
+      }
+    },
+      {
+      "Position": {
+        "x": 0,
+        "y": 0
+      },
+      "Sprite": {
+        "texture": "Debug/Assets/testfloor-2.png",
+          "OriginCenter": false
+      },
+      "RectangleCollider": {
+        "width": 50,
+        "height": 800
+      }
+    },
+      {
+      "Position": {
+        "x": 800,
+        "y": 0
+      },
+      "Sprite": {
+        "texture": "Debug/Assets/testfloor-2.png",
+          "OriginCenter": false
+      },
+      "RectangleCollider": {
+        "width": 50,
+        "height": 800
+      }
+    }
+  ]
+}

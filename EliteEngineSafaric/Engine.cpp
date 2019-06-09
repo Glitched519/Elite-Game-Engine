@@ -18,6 +18,7 @@ Engine::Engine(void):quit(false)
 	renderingSystem = new RenderingSystem(window);
 	inputSystem = new InputSystem();
 	physicsSystem = new PhysicsSystem();
+	behaviourSystem = new BehaviourSystem();
 	camera = new Camera();
 	physicsScale = 100.0f;
 }
@@ -25,12 +26,13 @@ Engine::Engine(void):quit(false)
 
 void Engine::start(void)
 {
-	
+	int WIDTH = 1920;
+	int HEIGHT = 1080;
 	Scene::load("Debug/Assets/Scene.json");
-	sf::RenderWindow win(sf::VideoMode(800, 600), "Game Engine");
+	sf::RenderWindow win(sf::VideoMode(WIDTH, HEIGHT), "Game Engine", sf::Style::Fullscreen);
 	sf::View cam;
-	cam.setCenter(400, 300);
-	cam.setSize(800,600);
+	cam.setCenter(WIDTH/2, HEIGHT/2);
+	cam.setSize(WIDTH,HEIGHT);
 	camera->cameraView = &cam;
 	window = &win;
 	while (window->isOpen()) {
@@ -51,6 +53,7 @@ void Engine::update() {
 	inputSystem->Update();
 	renderingSystem->update(window);
 	physicsSystem->update();
+	
 	window->display();
 	
 }
@@ -58,4 +61,7 @@ void Engine::update() {
 Engine::~Engine(void)
 {
 	delete(renderingSystem);
+	delete(physicsSystem);
+	delete(inputSystem);
+	delete(behaviourSystem);
 }

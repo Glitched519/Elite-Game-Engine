@@ -84,6 +84,9 @@
     <ClCompile Include="main.cpp">
       <Filter>TestGame</Filter>
     </ClCompile>
+    <ClCompile Include="BehaviourSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Component.h">
@@ -147,6 +150,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InputSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviourSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

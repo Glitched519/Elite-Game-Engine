@@ -56,11 +56,15 @@ namespace Scene {
 				}
 				else if (componentTypeName == "Rigidbody") {
 					Rigidbody& rigidbody = newEntity.addComponent<Rigidbody>();
+					
 				}
 				else if (componentTypeName == "CircleCollider") {
 					CircleCollider& circleCollider = newEntity.addComponent< CircleCollider >(); 
 					if (componentsIter->value.HasMember("radius") && componentsIter->value["radius"].IsNumber()) { 
 						circleCollider.radius = (float)componentsIter->value["radius"].GetDouble(); 
+					}
+					if (componentsIter->value.HasMember("mass") && componentsIter->value["mass"].IsNumber()) {
+						circleCollider.mass = (float)componentsIter->value["mass"].GetDouble();
 					}
 				}
 				else if (componentTypeName == "RectangleCollider") {

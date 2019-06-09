@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "RenderingSystem.h"
+#include "BehaviourSystem.h"
 #include "Scene.h"
 #include "InputSystem.h"
 #include "PhysicsSystem.h"
@@ -16,6 +17,7 @@ private:
 	RenderingSystem* renderingSystem;
 	InputSystem* inputSystem;
 	PhysicsSystem* physicsSystem;
+	BehaviourSystem* behaviourSystem;
 	
 	Engine(void);
 	~Engine(void);

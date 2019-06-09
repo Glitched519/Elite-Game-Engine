@@ -45,9 +45,10 @@ void PhysicsSystem::update(void) {
 				//Check if the body has a collider shape (fixture)       
 				if (body->GetFixtureList() == nullptr) {
 					b2CircleShape shape = b2CircleShape();
+					
 					CircleCollider& collider = entity.getComponent< CircleCollider >();
 					shape.m_radius = collider.radius / physicsscale;
-					body->CreateFixture(&shape, 1.0f);
+					body->CreateFixture(&shape, collider.mass);
 				}
 			}
 

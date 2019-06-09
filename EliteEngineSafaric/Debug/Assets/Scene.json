@@ -14,7 +14,8 @@
 
       },
       "CircleCollider": {
-        "radius": 50
+        "radius": 50,
+        "mass":  30
       }
     },
 

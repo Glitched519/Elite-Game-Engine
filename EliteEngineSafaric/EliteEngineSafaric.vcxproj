@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BehaviourSystem.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="CircleCollider.cpp" />
     <ClCompile Include="Component.cpp" />
@@ -144,6 +145,7 @@
     <ClCompile Include="System.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BehaviourSystem.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="CircleCollider.h" />
     <ClInclude Include="Component.h" />

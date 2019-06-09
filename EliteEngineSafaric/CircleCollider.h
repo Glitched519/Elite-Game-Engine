@@ -6,5 +6,6 @@ class CircleCollider : public Component< CircleCollider >
 {
 public:
     CircleCollider() : radius( 1.0f ) {};
+	float mass;
     float radius;
 };

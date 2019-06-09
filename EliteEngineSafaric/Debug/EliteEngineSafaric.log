@@ -1,1 +1,10 @@
-﻿  EliteEngineSafaric.vcxproj -> C:\Users\Partha\source\repos\Elite Game Engine\Debug\EliteEngineSafaric.exe
+﻿  BehaviourSystem.cpp
+c:\users\partha\source\repos\elite game engine\eliteenginesafaric\behavioursystem.cpp(7): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+  Engine.cpp
+  InputSystem.cpp
+  PhysicsSystem.cpp
+  main.cpp
+c:\users\partha\source\repos\elite game engine\eliteenginesafaric\main.cpp(42): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+  Generating Code...
+c:\users\partha\source\repos\elite game engine\eliteenginesafaric\inputsystem.cpp(17): warning C4715: 'operator++': not all control paths return a value
+  EliteEngineSafaric.vcxproj -> C:\Users\Partha\source\repos\Elite Game Engine\Debug\EliteEngineSafaric.exe

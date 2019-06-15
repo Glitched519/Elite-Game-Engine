@@ -8,6 +8,7 @@
 #include "Delegate.h"
 #include "InputEvent.h"
 #include "InputSystem.h"
+
 Engine &Engine::getInstance(void) {
 	static Engine instance;
 	return instance;
@@ -29,7 +30,7 @@ void Engine::start(void)
 	int WIDTH = 1920;
 	int HEIGHT = 1080;
 	Scene::load("Debug/Assets/Scene.json");
-	sf::RenderWindow win(sf::VideoMode(WIDTH, HEIGHT), "Game Engine", sf::Style::Fullscreen);
+	sf::RenderWindow win(sf::VideoMode(WIDTH, HEIGHT), "Game Engine");
 	sf::View cam;
 	cam.setCenter(WIDTH/2, HEIGHT/2);
 	cam.setSize(WIDTH,HEIGHT);
@@ -51,6 +52,7 @@ void Engine::update() {
 	window->clear();
 	window->setView(*camera->cameraView);
 	inputSystem->Update();
+	behaviourSystem->update();
 	renderingSystem->update(window);
 	physicsSystem->update();
 	

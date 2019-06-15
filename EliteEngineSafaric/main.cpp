@@ -64,7 +64,7 @@ void onButtonPressed(InputEvent e) {
 					rb.xForce = 0;
 					rb.yForce = 0;
 					break;
-				}
+					}
 				}
 			}
 		}

@@ -6,7 +6,7 @@
 
 PhysicsSystem::PhysicsSystem()
 {
-	_gravity = b2Vec2(0.0f, 0);
+	_gravity = b2Vec2(0, 9.81f);
 	_world = new b2World(_gravity);
 	componentMask = Position::getMask() || Rigidbody::getMask();
 	_lasWorldStepTime = system_clock::now();
